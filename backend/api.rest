@@ -1,0 +1,28 @@
+###
+GET http://localhost:4000/api/employees
+
+
+###
+POST http://localhost:4000/api/employees
+Content-Type: application/json
+
+{
+    "name": "Maximiliano Franco",
+    "position": "Semi Snr. Developer",
+    "office": "Argentina",
+    "salary": "20000"
+}
+
+###
+GET http://localhost:4000/api/employees/60dbd2be40283715bc26486f
+
+###
+DELETE http://localhost:4000/api/employees/60dbb1325d08873ab07eaf14
+
+###
+PUT http://localhost:4000/api/employees/60dbd0dbbee5810f0c9e5c4f
+Content-Type: application/json
+
+{
+    "salary": "15000"
+}
